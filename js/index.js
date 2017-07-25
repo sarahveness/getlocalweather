@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 $(document).ready(function() {
 
   var x = document.getElementById("demo");
@@ -15,9 +17,10 @@ $(document).ready(function() {
     var lat = position.coords.latitude;
 
     function getWeather() {
-      var url= `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`;
+      var url= `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}`;
+
       $.getJSON(url, function(data) {
-        console.log(data);
+        console.log(data)
       });
     };
   }

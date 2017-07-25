@@ -1,0 +1,22 @@
+{
+  "name": "weatherly",
+  "version": "1.0.0",
+  "description": "A simple app to tell you the weather in your current location!",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahveness/getlocalweather.git"
+  },
+  "author": "Sarah Veness",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahveness/getlocalweather/issues"
+  },
+  "homepage": "https://github.com/sarahveness/getlocalweather#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
