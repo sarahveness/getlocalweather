@@ -4,7 +4,7 @@
   "description": "A simple app to tell you the weather in your current location!",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sarahveness/getlocalweather#readme",
   "dependencies": {
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "request": "^2.81.0"
   }
 }
