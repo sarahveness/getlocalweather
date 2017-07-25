@@ -12,7 +12,7 @@ $(document).ready(function() {
       long = position.coords.longitude;
       lat = position.coords.latitude;
 
-      var url = `//api.openweathermap.org/data/2.5/weather?&lat=${lat}&lon=${long}&APPID=APIKEY`;
+      var url = `//api.openweathermap.org/data/2.5/weather?&lat=${lat}&lon=${long}&APPID=APPID`;
       $.getJSON(url, function(data) {
         var weatherType = data.weather[0].description;
         var city = data.name;
@@ -23,14 +23,14 @@ $(document).ready(function() {
         fTemp = Math.round(cTemp * 1.8 + 32);
 
         $("#city").html(city);
-        $("#temperature").html(`${cTemp} °C`);
+        $("#temperature").html(`${cTemp} <span class="temp">°C</span>`);
 
         $("#temperature").on('click', function() {
           if(tempChange === false) {
-            $("#temperature").html(`${cTemp} °C`);
+            $("#temperature").html(`${cTemp} <span class="temp">°C</span>`);
             tempChange = true;
           } else {
-            $("#temperature").html(`${fTemp} °F`);
+            $("#temperature").html(`${fTemp} <span class="temp">°C</span>`);
             tempChange = false;
           };
         })
